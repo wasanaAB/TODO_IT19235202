@@ -1,4 +1,4 @@
-package com.example.todo
+package com.example.todo.view
 
 import android.content.Intent
 import android.graphics.Color
@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.todo.R
+import com.example.todo.viewmodel.CardInfo
 import kotlinx.android.synthetic.main.view.view.*
 
 class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolder>() {
@@ -30,7 +32,7 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
         holder.title.text = data[position].title
         holder.priority.text = data[position].priority
         holder.itemView.setOnClickListener{
-            val intent= Intent(holder.itemView.context,UpdateCard::class.java)
+            val intent= Intent(holder.itemView.context, UpdateCard::class.java)
             intent.putExtra("id",position)
             holder.itemView.context.startActivity(intent)
         }

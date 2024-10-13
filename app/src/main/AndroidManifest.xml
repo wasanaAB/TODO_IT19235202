@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.mytheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".view.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".UpdateCard"
+            android:name=".view.UpdateCard"
             android:windowSoftInputMode="adjustResize"></activity>
         <activity
-            android:name=".CreateCard"
+            android:name=".view.CreateCard"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.MainActivity">
 
         </activity>
     </application>

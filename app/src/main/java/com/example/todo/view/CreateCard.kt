@@ -1,12 +1,14 @@
-package com.example.todo
+package com.example.todo.view
 
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.room.Room
+import com.example.todo.R
+import com.example.todo.model.DataObject
+import com.example.todo.model.Entity
+import com.example.todo.model.myDatabase
 import kotlinx.android.synthetic.main.activity_create_card.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

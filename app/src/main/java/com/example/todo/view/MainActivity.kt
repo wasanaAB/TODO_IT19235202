@@ -1,4 +1,4 @@
-package com.example.todo
+package com.example.todo.view
 
 
 import android.content.Intent
@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
+import com.example.todo.R
+import com.example.todo.model.DataObject
+import com.example.todo.model.myDatabase
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
