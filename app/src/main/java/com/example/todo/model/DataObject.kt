@@ -1,4 +1,6 @@
-package com.example.todo
+package com.example.todo.model
+
+import com.example.todo.viewmodel.CardInfo
 
 
 object DataObject {

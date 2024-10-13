@@ -1,6 +1,7 @@
-package com.example.todo
+package com.example.todo.model
 
 import androidx.room.*
+import com.example.todo.viewmodel.CardInfo
 
 @Dao
 interface DAO {
