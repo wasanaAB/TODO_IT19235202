@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".UpdateCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Update Details"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/create_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittetext"
+            android:hint="Enter Task"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#BFBBBB" />
+
+        <EditText
+            android:id="@+id/create_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittetext"
+            android:hint="Priority"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#BFBBBB" />
+
+        <EditText
+            android:id="@+id/create_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittetext"
+            android:hint="Enter Description Here"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#BFBBBB"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:maxLines="10"
+            android:gravity="top|start"
+            android:scrollHorizontally="false"
+            android:overScrollMode="always" />
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:timePickerMode="spinner" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#000080"
+                android:text="Update" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF0000"
+                android:text="Delete" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
